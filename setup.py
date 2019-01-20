@@ -6,7 +6,7 @@ setuptools.setup(
     author='Ozzy Walsh',
     description="A cli interface to Met Eireann",
     install_requires=[
-        'requests'
+        'requests',
         'termcolor'
     ],
     entry_points={
