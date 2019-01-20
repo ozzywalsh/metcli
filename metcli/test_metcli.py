@@ -19,15 +19,15 @@ def test_met_request_should_return_dict():
         assert isinstance(result, dict)
 
 
-@requests_mock.Mocker(kw='mocker')
-def test_met_request_should_handle_connection_problem(capsys, mocker):
-    mocker.get('https://www.met.ie/api/weather/national',
-             exc=requests.exceptions.ConnectionError)
+def test_met_request_should_handle_connection_problem(capsys):
+    with requests_mock.Mocker() as m:
+        m.get('https://www.met.ie/api/weather/national',
+              exc=requests.exceptions.ConnectionError)
 
-    with pytest.raises(SystemExit) as excinfo:
-        metcli.met_request('weather/national')
+        with pytest.raises(SystemExit) as excinfo:
+            metcli.met_request('weather/national')
 
-    assert str(excinfo.value.code) == 'There was a problem connecting to Met Éireann.'
+        assert str(excinfo.value.code) == 'There was a problem connecting to Met Éireann.'
 
 
 def test_get_national():
