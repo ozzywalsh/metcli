@@ -1,3 +1,4 @@
+from unittest.mock import MagicMock
 import pytest
 import requests
 import requests_mock
@@ -27,3 +28,11 @@ def test_met_request_should_handle_connection_problem(capsys, mocker):
         metcli.met_request('weather/national')
 
     assert str(excinfo.value.code) == 'There was a problem connecting to Met Éireann.'
+
+
+def test_get_national():
+    metcli.met_request = MagicMock()
+    metcli.get_national()
+
+    url = metcli.met_request.call_args
+    assert 'weather/national' in str(url)
