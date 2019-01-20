@@ -9,8 +9,7 @@ def met_request(endpoint):
         url = requests.compat.urljoin('https://www.met.ie/api/', endpoint)
         return requests.get(url).json()
     except requests.exceptions.ConnectionError:
-        print('There was a problem connecting to Met Éireann.')
-        sys.exit()
+        sys.exit('There was a problem connecting to Met Éireann.')
 
 
 def get_national():
