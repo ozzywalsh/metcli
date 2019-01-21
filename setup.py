@@ -14,12 +14,22 @@ setuptools.setup(
     description='A command line interface for Met Éireann.',
     long_description=long_description,
     long_description_content_type='text/markdown',
+    classifiers=[
+        'License :: OSI Approved :: MIT License',
+        'Programming Language :: Python :: 3.8',
+        'Topic :: Utilities'
+    ],
+    keywords='weather utility cli',
+    url='https://github.com/ozzywalsh/metcli',
     license='MIT',
+    packages=['metcli'],
     install_requires=[
         'requests',
         'termcolor'
     ],
     entry_points={
         'console_scripts': ['metcli=metcli.command_line:main']
-    }
+    },
+    include_package_data=True,
+    zip_safe=False
 )
