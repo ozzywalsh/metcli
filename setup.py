@@ -28,7 +28,7 @@ setuptools.setup(
         'termcolor'
     ],
     setup_requires=['pytest-runner'],
-    test_requires=['pytest'],
+    tests_require=['pytest'],
     entry_points={
         'console_scripts': ['metcli=metcli.command_line:main']
     },
