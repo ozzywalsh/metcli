@@ -3,11 +3,6 @@
 
 A command line interface to Met Éireann.
 
-Still in development so the **API will change**.
-
-Only gives national forecast at the moment.
-More features to come.
-
 ## Usage
 First, install `metcli`:
 ```bash
