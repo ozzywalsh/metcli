@@ -8,10 +8,13 @@ Still in development so the **API will change**.
 Only gives national forecast at the moment.
 More features to come.
 
-## Install
-`$ pip install metcli`
-
 ## Usage
+First, install `metcli`:
+```bash
+$ pip install metcli
+```
+
+Then:
 ```bash
 $ metcli
 TONIGHT - Tuesday 22nd January
