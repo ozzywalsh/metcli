@@ -27,5 +27,3 @@ dry and with a few sunny spells possible. Afternoon highs of just 3 to 6 degrees
 generally, but 7 to 10 degrees in Atlantic coastal counties. Mainly light to
 moderate westerly breezes.
 ````
-
-[![asciicast](https://asciinema.org/a/CKtocN7p2THuhkHUPojJfT0Ty.svg)](https://asciinema.org/a/CKtocN7p2THuhkHUPojJfT0Ty)
