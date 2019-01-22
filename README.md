@@ -1,5 +1,6 @@
 # metcli
 [![CircleCI](https://circleci.com/gh/ozzywalsh/metcli/tree/master.svg?style=svg)](https://circleci.com/gh/ozzywalsh/metcli/tree/master)
+
 A command line interface to Met Éireann.
 
 Still in development so the **API will change**.
