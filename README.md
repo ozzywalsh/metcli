@@ -1,4 +1,5 @@
 # metcli
+![](https://img.shields.io/pypi/pyversions/metcli.svg)
 [![CircleCI](https://circleci.com/gh/ozzywalsh/metcli/tree/master.svg?style=svg)](https://circleci.com/gh/ozzywalsh/metcli/tree/master)
 
 A command line interface to Met Éireann.
