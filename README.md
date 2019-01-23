@@ -6,12 +6,12 @@ A command line interface to Met Éireann.
 
 ## Usage
 First, install `metcli`:
-```bash
+```
 $ pip install metcli
 ```
 
 Then:
-```bash
+```
 $ metcli
 TONIGHT - Tuesday 22nd January
 Cold tonight with scattered showers and a brisk northwesterly breeze. Some of
