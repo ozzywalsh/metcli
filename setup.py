@@ -9,7 +9,7 @@ with open(path.join(this_directory, 'README.md'), encoding='utf-8') as f:
 
 setuptools.setup(
     name='metcli',
-    version='0.1.0',
+    version='0.1.1',
     author='Ozzy Walsh',
     description='A command line interface for Met Éireann.',
     long_description=long_description,
