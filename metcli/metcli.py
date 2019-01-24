@@ -18,15 +18,13 @@ def get_national():
 
 
 def format_panel(panel):
-    panel_template = '{title} - {date}\n{text}'
     title, text, date = panel.values()
-    wrapped_text = '\n'.join(textwrap.wrap(text, width=80))
-    text = panel_template.format(title=colored(title, 'red'),
-                                 date=colored(date, 'green'),
-                                 text=wrapped_text
-                                 )
 
-    return text.strip()
+    title = colored(title, 'red').strip()
+    date = colored(date, 'green') if date else ''
+    text = '\n'.join(textwrap.wrap(text, width=80)).strip()
+
+    return f'{title}{" - " if len(date) > 0 else ""}{date}\n{text}'
 
 
 def format_national(national):
@@ -34,6 +32,7 @@ def format_national(national):
         'today',
         'tonight',
         'tomorrow',
+        'outlook'
     ]
 
     forecast_panels = national['forecastText']['forecastPanels']
@@ -49,5 +48,7 @@ def format_national(national):
 
 
 def run():
+    # call the '/weather/national' endpoint and return json
     national = get_national()
+    # print formatted result
     print(format_national(national))
