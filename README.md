@@ -4,7 +4,7 @@
 
 A command line interface to Met Éireann.
 
-[![asciicast](https://asciinema.org/a/2CqJ3cqlYxvMNMSaIjOR77Bio.png)](https://asciinema.org/a2CqJ3cqlYxvMNMSaIjOR77Bio/)
+[![asciicast](https://asciinema.org/a/2CqJ3cqlYxvMNMSaIjOR77Bio.png)](https://asciinema.org/a/2CqJ3cqlYxvMNMSaIjOR77Bio/)
 
 ## Usage
 First, install `metcli`:
